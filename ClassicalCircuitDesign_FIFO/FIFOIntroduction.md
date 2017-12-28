@@ -17,7 +17,7 @@ FIFO(first in first out)的中文名称叫先进先出队列，它就像一个�
 
 
 
-![图片引用](C:/Users/zhxiaoq9/Desktop/fifo工作原理.PNG)
+![FIFO工作原理](https://github.com/zhxiaoq9/WeChat/blob/master/ClassicalCircuitDesign_FIFO/images/FIFOWorkTheory.PNG)
        
 
 
