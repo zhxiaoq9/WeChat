@@ -15,7 +15,7 @@ FIFO(first in first out)的中文名称叫先进先出队列，它就像一个�
 
 
 ## 二. 异步FIFO工作原理
-![FIFO工作原理](https://github.com/zhxiaoq9/WeChat/blob/master/ClassicalCircuitDesign_FIFO/images/FIFOWorkTheory.PNG "图片来自参考文献1")
+![FIFO工作原理](https://raw.githubusercontent.com/zhxiaoq9/WeChat/master/ClassicalCircuitDesign_FIFO/images/FIFOWorkTheory.PNG "图片来自参考文献1")
 
 异步FIFO包含了读(raddr)与写(waddr)指针，读指针在读时钟(rclk)域，写指针在写时钟(wclk)域。其中读指针指向下一个要读数据的地址，写指针指向下一个要写数据的地址。这里以深度为16的FIFO为例介绍FIFO的工作过程，地址位宽为4。
 
@@ -66,7 +66,7 @@ FIFO(first in first out)的中文名称叫先进先出队列，它就像一个�
 FIFO设计中常用的是两级同步器，但这种同步器常用来同步单比特信号，而在FIFO设计中我们需要同步的是多比特的地址信号。那怎么样使用两级同步器同步多比特信号呢？  
 
 **1. 首先我们看一下什么是两级同步器**
-![两级同步器](https://github.com/zhxiaoq9/WeChat/blob/master/ClassicalCircuitDesign_FIFO/images/LevelSyn.PNG "图片来自网络")
+![两级同步器](https://raw.githubusercontent.com/zhxiaoq9/WeChat/master/ClassicalCircuitDesign_FIFO/images/LevelSyn.PNG "图片来自网络")
 
 上图中，clk1时钟域的寄存器regA_data的输出经过两个clk2时钟域的寄存器后生成了同步后的信号out_data，这就是两级同步器的基本结构。假设clk1中的信号值原本为1'b1，若在clk2时钟的上升沿其值还是1'b1，那么肯定不会产生亚稳态。而如果在clk2的上升沿，其值从1'b1->1'b0，那么可能出现亚稳态导致最后的out_data值不确定。  
 总之当两级同步器的输入不变时肯定不会出现亚稳态，而输入变化时则亚稳态会导致同步后的输出不确定。
@@ -79,7 +79,7 @@ FIFO设计中常用的是两级同步器，但这种同步器常用来同步单�
 **3. 使用格雷码进行同步**  
 FIFO中不能直接对二进制地址直接进行同步的方法是使用格雷码进行同步。因为格雷码每次只有一个比特发生变化，因此使用两级同步器进行同步时最多只可能有一比特发生错误。下图是一个深度为8的FIFO的格雷码编码情况。
 
-![格雷码](https://github.com/zhxiaoq9/WeChat/blob/master/ClassicalCircuitDesign_FIFO/images/GrayCode.PNG "图片来自参考文献1")
+![格雷码](https://raw.githubusercontent.com/zhxiaoq9/WeChat/master/ClassicalCircuitDesign_FIFO/images/GrayCode.PNG "图片来自参考文献1")
 
 上图***左侧***为第二种(论文里把它称为***第二种***)格雷码编码，这是平常我们使用最多的编码形式。对于深度为8的FIFO其变化范围是4'b0000->...->4'b1000。这种编码方式的特点是除了最高位外，其它的位在上半部分(0-7)和下半部分(8-15)是镜像分布的。由于访问存储单元只需要最低3比特，因此会使用格雷码低3比特访问存储器。但是由于其是镜像对称的，所以直接用低3比特访问存储器会发生问题。  
 例如，假设读指针为4'b0111，写指针为4'b0100，在写完3'b100储单元后若还想继续写存储器，那么因为格雷码从4'b0100变为4'b1100，而访问存储器只需要使用低3比特，所以下一次写存储器时仍然写的是3'b100。这明显是不正确的。
@@ -92,10 +92,10 @@ FIFO中不能直接对二进制地址直接进行同步的方法是使用格雷�
 如果要用格雷码比较产生空满信号，则必须使用第2种格雷码。  
 
 第1种格雷码实现结构如下图所示：  
-![第1种](https://github.com/zhxiaoq9/WeChat/blob/master/ClassicalCircuitDesign_FIFO/images/GrayCodeCounter2.PNG "图片来自参考文献1")
+![第1种](https://raw.githubusercontent.com/zhxiaoq9/WeChat/master/ClassicalCircuitDesign_FIFO/images/GrayCodeCounter2.PNG "图片来自参考文献1")
 
 第2种格雷码实现结构如下图所示：  
-![第2种](https://github.com/zhxiaoq9/WeChat/blob/master/ClassicalCircuitDesign_FIFO/images/GrayCodeCounter1.PNG "图片来自参考文献1")
+![第2种](https://raw.githubusercontent.com/zhxiaoq9/WeChat/master/ClassicalCircuitDesign_FIFO/images/GrayCodeCounter1.PNG "图片来自参考文献1")
 
 
 上面说使用格雷码可以避免二进制码出现的问题，但是问题是使用格雷码仍可能出现1比特的同步错误，**如果这个错误发生了会对FIFO造成影响吗？** ***答案是不会。***  
