@@ -27,7 +27,7 @@ endmodule
 **2.代码仿真**  
 用下面的仿真代码可对上面的设计进行仿真：  
 ```Verilog
-//asyn_reset_syn_release _t.v
+//asyn_reset_syn_release_t.v
 `timescale 1ns/1ps
 
 module ASYN_RESET_SYN_RELEASE_T;
