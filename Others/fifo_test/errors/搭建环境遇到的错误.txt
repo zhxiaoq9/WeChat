@@ -1,0 +1,21 @@
+1、scorebord
+
+	function new(string name, uvm_component parent = null);
+		super.new(name, null);
+	endfunction
+	
+super.new()函数应该传入parent而不是null
+
+2、import语句
+import只能一次包含，而不能多级包含
+
+3、没有包含case0文件
+报告fatal，case0没有注册
+
+4、main_phase中变量定义要在调用super.main_phase之前
+
+task sb::main_phase(uvm_phase phase);
+	trans       pred_tr;
+	trans       actu_tr;
+	super.main_phase(phase);
+	

@@ -1,0 +1,3952 @@
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:19:18 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# Loading D:/QuestaSim10_4e/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test case1...
+# UVM_INFO tb/drv.svh(69) @ 15: uvm_test_top.env0.agt0.drv0 [drv] the 1th data=218 has been sent
+# UVM_INFO tb/drv.svh(69) @ 25: uvm_test_top.env0.agt0.drv0 [drv] the 2th data=19c has been sent
+# UVM_INFO tb/mon.svh(58) @ 25: uvm_test_top.env0.agt0.mon0 [mon] has received 1th data=19c
+# UVM_INFO tb/drv.svh(69) @ 35: uvm_test_top.env0.agt0.drv0 [drv] the 3th data=41 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 35: uvm_test_top.env0.agt1.mon0 [o_mon] has received 1th data=59c
+# UVM_INFO tb/mon.svh(58) @ 35: uvm_test_top.env0.agt0.mon0 [mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 35: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @957 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 45: uvm_test_top.env0.agt0.drv0 [drv] the 4th data=15c has been sent
+# UVM_INFO tb/mon.svh(58) @ 45: uvm_test_top.env0.agt0.mon0 [mon] has received 3th data=15c
+# UVM_INFO tb/o_mon.svh(60) @ 45: uvm_test_top.env0.agt1.mon0 [o_mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 45: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @965 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 55: uvm_test_top.env0.agt0.drv0 [drv] the 5th data=15d has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 55: uvm_test_top.env0.agt1.mon0 [o_mon] has received 3th data=55c
+# UVM_INFO tb/mon.svh(58) @ 55: uvm_test_top.env0.agt0.mon0 [mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 55: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @973 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 65: uvm_test_top.env0.agt0.drv0 [drv] the 6th data=3ff has been sent
+# UVM_INFO tb/mon.svh(58) @ 65: uvm_test_top.env0.agt0.mon0 [mon] has received 5th data=3ff
+# UVM_INFO tb/o_mon.svh(60) @ 65: uvm_test_top.env0.agt1.mon0 [o_mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 65: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @981 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/o_mon.svh(60) @ 75: uvm_test_top.env0.agt1.mon0 [o_mon] has received 5th data=3ff
+# UVM_INFO tb/mon.svh(66) @ 75: uvm_test_top.env0.agt0.mon0 [mon] has received 6th data=3ff
+# UVM_INFO tb/sb.svh(54) @ 75: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @985 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/o_mon.svh(68) @ 85: uvm_test_top.env0.agt1.mon0 [o_mon] has received 6th data=3ff
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   36
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [drv]     6
+# [mon]     6
+# [o_mon]     6
+# [sb]    15
+# ** Note: $finish    : D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 165 ns  Iteration: 105  Instance: /WRITER_TB
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+do sim.do
+# End time: 16:20:34 on Jan 11,2018, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 0
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:20:34 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:20:34 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:20:34 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:20:35 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:20:35 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(28): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(32): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(33): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:20:37 on Jan 11,2018, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:20:37 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# Loading D:/QuestaSim10_4e/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test case1...
+# UVM_INFO tb/drv.svh(69) @ 15: uvm_test_top.env0.agt0.drv0 [drv] the 1th data=218 has been sent
+# UVM_INFO tb/drv.svh(69) @ 25: uvm_test_top.env0.agt0.drv0 [drv] the 2th data=19c has been sent
+# UVM_INFO tb/mon.svh(58) @ 25: uvm_test_top.env0.agt0.mon0 [mon] has received 1th data=19c
+# UVM_INFO tb/drv.svh(69) @ 35: uvm_test_top.env0.agt0.drv0 [drv] the 3th data=41 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 35: uvm_test_top.env0.agt1.mon0 [o_mon] has received 1th data=59c
+# UVM_INFO tb/mon.svh(58) @ 35: uvm_test_top.env0.agt0.mon0 [mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 35: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @957 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 45: uvm_test_top.env0.agt0.drv0 [drv] the 4th data=15c has been sent
+# UVM_INFO tb/mon.svh(58) @ 45: uvm_test_top.env0.agt0.mon0 [mon] has received 3th data=15c
+# UVM_INFO tb/o_mon.svh(60) @ 45: uvm_test_top.env0.agt1.mon0 [o_mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 45: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @965 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 55: uvm_test_top.env0.agt0.drv0 [drv] the 5th data=15d has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 55: uvm_test_top.env0.agt1.mon0 [o_mon] has received 3th data=55c
+# UVM_INFO tb/mon.svh(58) @ 55: uvm_test_top.env0.agt0.mon0 [mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 55: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @973 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 65: uvm_test_top.env0.agt0.drv0 [drv] the 6th data=3ff has been sent
+# UVM_INFO tb/mon.svh(58) @ 65: uvm_test_top.env0.agt0.mon0 [mon] has received 5th data=3ff
+# UVM_INFO tb/o_mon.svh(60) @ 65: uvm_test_top.env0.agt1.mon0 [o_mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 65: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @981 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 75: uvm_test_top.env0.agt0.drv0 [drv] the 7th data=0 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 75: uvm_test_top.env0.agt1.mon0 [o_mon] has received 5th data=3ff
+# UVM_INFO tb/mon.svh(58) @ 75: uvm_test_top.env0.agt0.mon0 [mon] has received 6th data=0
+# UVM_INFO tb/sb.svh(54) @ 75: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @989 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/mon.svh(66) @ 85: uvm_test_top.env0.agt0.mon0 [mon] has received 7th data=0
+# UVM_INFO tb/o_mon.svh(60) @ 85: uvm_test_top.env0.agt1.mon0 [o_mon] has received 6th data=0
+# UVM_INFO tb/sb.svh(54) @ 85: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @993 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/o_mon.svh(68) @ 95: uvm_test_top.env0.agt1.mon0 [o_mon] has received 7th data=0
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   42
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [drv]     7
+# [mon]     7
+# [o_mon]     7
+# [sb]    18
+# ** Note: $finish    : D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 175 ns  Iteration: 105  Instance: /WRITER_TB
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+
+do sim.do
+# End time: 16:26:41 on Jan 11,2018, Elapsed time: 0:06:04
+# Errors: 0, Warnings: 0
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:26:42 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:26:42 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:26:42 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:26:43 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:26:43 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(27): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(29): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(30): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:26:44 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:26:44 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# Loading D:/QuestaSim10_4e/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test case1...
+# UVM_INFO tb/drv.svh(69) @ 15: uvm_test_top.env0.agt0.drv0 [drv] the 1th data=218 has been sent
+# UVM_INFO tb/drv.svh(69) @ 25: uvm_test_top.env0.agt0.drv0 [drv] the 2th data=19c has been sent
+# UVM_INFO tb/mon.svh(56) @ 25: uvm_test_top.env0.agt0.mon0 [mon] has received 1th data=19c
+# UVM_INFO tb/drv.svh(69) @ 35: uvm_test_top.env0.agt0.drv0 [drv] the 3th data=41 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 35: uvm_test_top.env0.agt1.mon0 [o_mon] has received 1th data=59c
+# UVM_INFO tb/mon.svh(56) @ 35: uvm_test_top.env0.agt0.mon0 [mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 35: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @957 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 45: uvm_test_top.env0.agt0.drv0 [drv] the 4th data=15c has been sent
+# UVM_INFO tb/mon.svh(56) @ 45: uvm_test_top.env0.agt0.mon0 [mon] has received 3th data=15c
+# UVM_INFO tb/o_mon.svh(60) @ 45: uvm_test_top.env0.agt1.mon0 [o_mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 45: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @965 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 55: uvm_test_top.env0.agt0.drv0 [drv] the 5th data=15d has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 55: uvm_test_top.env0.agt1.mon0 [o_mon] has received 3th data=55c
+# UVM_INFO tb/mon.svh(56) @ 55: uvm_test_top.env0.agt0.mon0 [mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 55: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @973 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 65: uvm_test_top.env0.agt0.drv0 [drv] the 6th data=3ff has been sent
+# UVM_INFO tb/mon.svh(56) @ 65: uvm_test_top.env0.agt0.mon0 [mon] has received 5th data=3ff
+# UVM_INFO tb/o_mon.svh(60) @ 65: uvm_test_top.env0.agt1.mon0 [o_mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 65: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @981 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 75: uvm_test_top.env0.agt0.drv0 [drv] the 7th data=0 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 75: uvm_test_top.env0.agt1.mon0 [o_mon] has received 5th data=3ff
+# UVM_INFO tb/mon.svh(56) @ 75: uvm_test_top.env0.agt0.mon0 [mon] has received 6th data=0
+# UVM_INFO tb/sb.svh(54) @ 75: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @989 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/mon.svh(64) @ 85: uvm_test_top.env0.agt0.mon0 [mon] has received 7th data=0
+# UVM_INFO tb/o_mon.svh(60) @ 85: uvm_test_top.env0.agt1.mon0 [o_mon] has received 6th data=0
+# UVM_INFO tb/sb.svh(54) @ 85: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @993 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/o_mon.svh(68) @ 95: uvm_test_top.env0.agt1.mon0 [o_mon] has received 7th data=0
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   42
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [drv]     7
+# [mon]     7
+# [o_mon]     7
+# [sb]    18
+# ** Note: $finish    : D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 175 ns  Iteration: 105  Instance: /WRITER_TB
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do sim.do
+# End time: 16:28:57 on Jan 11,2018, Elapsed time: 0:02:13
+# Errors: 0, Warnings: 0
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:28:57 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:28:57 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:28:57 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:28:59 on Jan 11,2018, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:28:59 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(27): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(29): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(30): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:29:00 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:29:00 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# Loading D:/QuestaSim10_4e/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test case1...
+# ** Fatal: (SIGSEGV) Bad handle or reference.
+#    Time: 0 ns  Iteration: 7  Process: /writer_pkg::coverage::#cnt_cov#/#SAMPLE#(#cnt_cov#) File: tb/arb_if.sv
+# Fatal error in file tb/arb_if.sv
+# 
+# Fatal error reported during simulation. Cannot run 'fcover' command. Please look above output for the fatal error message(s).
+# 
+# Fatal error reported during simulation. Cannot run 'fcover' command. Please look above output for the fatal error message(s).
+# 
+# Fatal error reported during simulation. Coverage report is disabled. Please look above output for the fatal error message(s).
+# 
+# Fatal error reported during simulation. Coverage report is disabled. Please look above output for the fatal error message(s).
+# 
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do sim.do
+# End time: 16:31:40 on Jan 11,2018, Elapsed time: 0:02:40
+# Errors: 2, Warnings: 0
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:31:40 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:31:40 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:31:40 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:31:41 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:31:41 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(27): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(29): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(30): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:31:43 on Jan 11,2018, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:31:43 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# Loading D:/QuestaSim10_4e/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test case1...
+# UVM_INFO tb/drv.svh(69) @ 15: uvm_test_top.env0.agt0.drv0 [drv] the 1th data=218 has been sent
+# UVM_INFO tb/drv.svh(69) @ 25: uvm_test_top.env0.agt0.drv0 [drv] the 2th data=19c has been sent
+# UVM_INFO tb/mon.svh(56) @ 25: uvm_test_top.env0.agt0.mon0 [mon] has received 1th data=19c
+# UVM_INFO tb/drv.svh(69) @ 35: uvm_test_top.env0.agt0.drv0 [drv] the 3th data=41 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 35: uvm_test_top.env0.agt1.mon0 [o_mon] has received 1th data=59c
+# UVM_INFO tb/mon.svh(56) @ 35: uvm_test_top.env0.agt0.mon0 [mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 35: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @957 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 45: uvm_test_top.env0.agt0.drv0 [drv] the 4th data=15c has been sent
+# UVM_INFO tb/mon.svh(56) @ 45: uvm_test_top.env0.agt0.mon0 [mon] has received 3th data=15c
+# UVM_INFO tb/o_mon.svh(60) @ 45: uvm_test_top.env0.agt1.mon0 [o_mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 45: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @965 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 55: uvm_test_top.env0.agt0.drv0 [drv] the 5th data=15d has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 55: uvm_test_top.env0.agt1.mon0 [o_mon] has received 3th data=55c
+# UVM_INFO tb/mon.svh(56) @ 55: uvm_test_top.env0.agt0.mon0 [mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 55: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @973 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 65: uvm_test_top.env0.agt0.drv0 [drv] the 6th data=3ff has been sent
+# UVM_INFO tb/mon.svh(56) @ 65: uvm_test_top.env0.agt0.mon0 [mon] has received 5th data=3ff
+# UVM_INFO tb/o_mon.svh(60) @ 65: uvm_test_top.env0.agt1.mon0 [o_mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 65: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @981 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 75: uvm_test_top.env0.agt0.drv0 [drv] the 7th data=0 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 75: uvm_test_top.env0.agt1.mon0 [o_mon] has received 5th data=3ff
+# UVM_INFO tb/mon.svh(56) @ 75: uvm_test_top.env0.agt0.mon0 [mon] has received 6th data=0
+# UVM_INFO tb/sb.svh(54) @ 75: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @989 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/mon.svh(64) @ 85: uvm_test_top.env0.agt0.mon0 [mon] has received 7th data=0
+# UVM_INFO tb/o_mon.svh(60) @ 85: uvm_test_top.env0.agt1.mon0 [o_mon] has received 6th data=0
+# UVM_INFO tb/sb.svh(54) @ 85: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @993 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/o_mon.svh(68) @ 95: uvm_test_top.env0.agt1.mon0 [o_mon] has received 7th data=0
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   42
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [drv]     7
+# [mon]     7
+# [o_mon]     7
+# [sb]    18
+# ** Note: $finish    : D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 175 ns  Iteration: 105  Instance: /WRITER_TB
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do sim.do
+# End time: 16:32:20 on Jan 11,2018, Elapsed time: 0:00:37
+# Errors: 0, Warnings: 0
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:32:20 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:32:20 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:32:20 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:32:21 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:32:22 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(27): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(29): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(30): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:32:23 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:32:23 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# ** Fatal: (vsim-8274) tb/coverage.svh(39): Virtual interface elem. 'clk' not found in 'arb_if'.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: case1.sv
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./sim.do PAUSED at line 31
+cd C:/Users/zhxiaoq9/Desktop/writer
+do sim.do
+# End time: 16:33:04 on Jan 11,2018, Elapsed time: 0:00:41
+# Errors: 1, Warnings: 0
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:33:04 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:33:04 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:33:04 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:33:05 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:33:06 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(27): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(29): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(30): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:33:07 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:33:07 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# ** Warning: (vsim-8441) tb/coverage.svh(38): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# ** Warning: (vsim-8441) tb/coverage.svh(38): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# Loading D:/QuestaSim10_4e/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test case1...
+# UVM_INFO tb/drv.svh(69) @ 15: uvm_test_top.env0.agt0.drv0 [drv] the 1th data=218 has been sent
+# UVM_INFO tb/drv.svh(69) @ 25: uvm_test_top.env0.agt0.drv0 [drv] the 2th data=19c has been sent
+# UVM_INFO tb/mon.svh(56) @ 25: uvm_test_top.env0.agt0.mon0 [mon] has received 1th data=19c
+# UVM_INFO tb/drv.svh(69) @ 35: uvm_test_top.env0.agt0.drv0 [drv] the 3th data=41 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 35: uvm_test_top.env0.agt1.mon0 [o_mon] has received 1th data=59c
+# UVM_INFO tb/mon.svh(56) @ 35: uvm_test_top.env0.agt0.mon0 [mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 35: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @957 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 45: uvm_test_top.env0.agt0.drv0 [drv] the 4th data=15c has been sent
+# UVM_INFO tb/mon.svh(56) @ 45: uvm_test_top.env0.agt0.mon0 [mon] has received 3th data=15c
+# UVM_INFO tb/o_mon.svh(60) @ 45: uvm_test_top.env0.agt1.mon0 [o_mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 45: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @965 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 55: uvm_test_top.env0.agt0.drv0 [drv] the 5th data=15d has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 55: uvm_test_top.env0.agt1.mon0 [o_mon] has received 3th data=55c
+# UVM_INFO tb/mon.svh(56) @ 55: uvm_test_top.env0.agt0.mon0 [mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 55: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @973 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 65: uvm_test_top.env0.agt0.drv0 [drv] the 6th data=3ff has been sent
+# UVM_INFO tb/mon.svh(56) @ 65: uvm_test_top.env0.agt0.mon0 [mon] has received 5th data=3ff
+# UVM_INFO tb/o_mon.svh(60) @ 65: uvm_test_top.env0.agt1.mon0 [o_mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 65: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @981 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 75: uvm_test_top.env0.agt0.drv0 [drv] the 7th data=0 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 75: uvm_test_top.env0.agt1.mon0 [o_mon] has received 5th data=3ff
+# UVM_INFO tb/mon.svh(56) @ 75: uvm_test_top.env0.agt0.mon0 [mon] has received 6th data=0
+# UVM_INFO tb/sb.svh(54) @ 75: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @989 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/mon.svh(64) @ 85: uvm_test_top.env0.agt0.mon0 [mon] has received 7th data=0
+# UVM_INFO tb/o_mon.svh(60) @ 85: uvm_test_top.env0.agt1.mon0 [o_mon] has received 6th data=0
+# UVM_INFO tb/sb.svh(54) @ 85: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @993 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/o_mon.svh(68) @ 95: uvm_test_top.env0.agt1.mon0 [o_mon] has received 7th data=0
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   42
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [drv]     7
+# [mon]     7
+# [o_mon]     7
+# [sb]    18
+# ** Note: $finish    : D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 175 ns  Iteration: 105  Instance: /WRITER_TB
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do sim.do
+# End time: 16:33:36 on Jan 11,2018, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 2
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:33:36 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:33:36 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:33:36 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:33:37 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:33:37 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(27): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(29): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(30): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:33:39 on Jan 11,2018, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:33:39 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# ** Warning: (vsim-8441) tb/coverage.svh(38): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# ** Warning: (vsim-8441) tb/coverage.svh(38): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# Loading D:/QuestaSim10_4e/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test case1...
+# UVM_INFO tb/drv.svh(69) @ 15: uvm_test_top.env0.agt0.drv0 [drv] the 1th data=218 has been sent
+# UVM_INFO tb/drv.svh(69) @ 25: uvm_test_top.env0.agt0.drv0 [drv] the 2th data=19c has been sent
+# UVM_INFO tb/mon.svh(56) @ 25: uvm_test_top.env0.agt0.mon0 [mon] has received 1th data=19c
+# UVM_INFO tb/drv.svh(69) @ 35: uvm_test_top.env0.agt0.drv0 [drv] the 3th data=41 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 35: uvm_test_top.env0.agt1.mon0 [o_mon] has received 1th data=59c
+# UVM_INFO tb/mon.svh(56) @ 35: uvm_test_top.env0.agt0.mon0 [mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 35: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @957 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 45: uvm_test_top.env0.agt0.drv0 [drv] the 4th data=15c has been sent
+# UVM_INFO tb/mon.svh(56) @ 45: uvm_test_top.env0.agt0.mon0 [mon] has received 3th data=15c
+# UVM_INFO tb/o_mon.svh(60) @ 45: uvm_test_top.env0.agt1.mon0 [o_mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 45: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @965 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 55: uvm_test_top.env0.agt0.drv0 [drv] the 5th data=15d has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 55: uvm_test_top.env0.agt1.mon0 [o_mon] has received 3th data=55c
+# UVM_INFO tb/mon.svh(56) @ 55: uvm_test_top.env0.agt0.mon0 [mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 55: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @973 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 65: uvm_test_top.env0.agt0.drv0 [drv] the 6th data=3ff has been sent
+# UVM_INFO tb/mon.svh(56) @ 65: uvm_test_top.env0.agt0.mon0 [mon] has received 5th data=3ff
+# UVM_INFO tb/o_mon.svh(60) @ 65: uvm_test_top.env0.agt1.mon0 [o_mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 65: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @981 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 75: uvm_test_top.env0.agt0.drv0 [drv] the 7th data=0 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 75: uvm_test_top.env0.agt1.mon0 [o_mon] has received 5th data=3ff
+# UVM_INFO tb/mon.svh(56) @ 75: uvm_test_top.env0.agt0.mon0 [mon] has received 6th data=0
+# UVM_INFO tb/sb.svh(54) @ 75: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @989 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/mon.svh(64) @ 85: uvm_test_top.env0.agt0.mon0 [mon] has received 7th data=0
+# UVM_INFO tb/o_mon.svh(60) @ 85: uvm_test_top.env0.agt1.mon0 [o_mon] has received 6th data=0
+# UVM_INFO tb/sb.svh(54) @ 85: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @993 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/o_mon.svh(68) @ 95: uvm_test_top.env0.agt1.mon0 [o_mon] has received 7th data=0
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   42
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [drv]     7
+# [mon]     7
+# [o_mon]     7
+# [sb]    18
+# ** Note: $finish    : D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 175 ns  Iteration: 105  Instance: /WRITER_TB
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do sim.do
+# End time: 16:36:44 on Jan 11,2018, Elapsed time: 0:03:05
+# Errors: 0, Warnings: 2
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:36:44 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:36:44 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:36:44 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:36:45 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:36:45 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(27): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(29): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(30): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:36:47 on Jan 11,2018, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:36:47 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# ** Warning: (vsim-8441) tb/coverage.svh(39): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# ** Warning: (vsim-8441) tb/coverage.svh(39): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# Loading D:/QuestaSim10_4e/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test case1...
+# UVM_INFO tb/drv.svh(69) @ 15: uvm_test_top.env0.agt0.drv0 [drv] the 1th data=218 has been sent
+# UVM_INFO tb/drv.svh(69) @ 25: uvm_test_top.env0.agt0.drv0 [drv] the 2th data=19c has been sent
+# UVM_INFO tb/mon.svh(56) @ 25: uvm_test_top.env0.agt0.mon0 [mon] has received 1th data=19c
+# UVM_INFO tb/drv.svh(69) @ 35: uvm_test_top.env0.agt0.drv0 [drv] the 3th data=41 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 35: uvm_test_top.env0.agt1.mon0 [o_mon] has received 1th data=59c
+# UVM_INFO tb/mon.svh(56) @ 35: uvm_test_top.env0.agt0.mon0 [mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 35: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @957 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 45: uvm_test_top.env0.agt0.drv0 [drv] the 4th data=15c has been sent
+# UVM_INFO tb/mon.svh(56) @ 45: uvm_test_top.env0.agt0.mon0 [mon] has received 3th data=15c
+# UVM_INFO tb/o_mon.svh(60) @ 45: uvm_test_top.env0.agt1.mon0 [o_mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 45: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @965 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 55: uvm_test_top.env0.agt0.drv0 [drv] the 5th data=15d has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 55: uvm_test_top.env0.agt1.mon0 [o_mon] has received 3th data=55c
+# UVM_INFO tb/mon.svh(56) @ 55: uvm_test_top.env0.agt0.mon0 [mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 55: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @973 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 65: uvm_test_top.env0.agt0.drv0 [drv] the 6th data=3ff has been sent
+# UVM_INFO tb/mon.svh(56) @ 65: uvm_test_top.env0.agt0.mon0 [mon] has received 5th data=3ff
+# UVM_INFO tb/o_mon.svh(60) @ 65: uvm_test_top.env0.agt1.mon0 [o_mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 65: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @981 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 75: uvm_test_top.env0.agt0.drv0 [drv] the 7th data=0 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 75: uvm_test_top.env0.agt1.mon0 [o_mon] has received 5th data=3ff
+# UVM_INFO tb/mon.svh(56) @ 75: uvm_test_top.env0.agt0.mon0 [mon] has received 6th data=0
+# UVM_INFO tb/sb.svh(54) @ 75: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @989 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/mon.svh(64) @ 85: uvm_test_top.env0.agt0.mon0 [mon] has received 7th data=0
+# UVM_INFO tb/o_mon.svh(60) @ 85: uvm_test_top.env0.agt1.mon0 [o_mon] has received 6th data=0
+# UVM_INFO tb/sb.svh(54) @ 85: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @993 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/o_mon.svh(68) @ 95: uvm_test_top.env0.agt1.mon0 [o_mon] has received 7th data=0
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   42
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [drv]     7
+# [mon]     7
+# [o_mon]     7
+# [sb]    18
+# ** Note: $finish    : D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 175 ns  Iteration: 105  Instance: /WRITER_TB
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do sim.do
+# End time: 16:39:02 on Jan 11,2018, Elapsed time: 0:02:15
+# Errors: 0, Warnings: 2
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:39:02 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:39:02 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:39:02 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:39:03 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:39:03 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(27): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(29): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(30): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:39:05 on Jan 11,2018, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:39:05 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# ** Warning: (vsim-8441) tb/coverage.svh(40): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# ** Warning: (vsim-8441) tb/coverage.svh(40): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# Loading D:/QuestaSim10_4e/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test case1...
+# UVM_INFO tb/drv.svh(69) @ 15: uvm_test_top.env0.agt0.drv0 [drv] the 1th data=218 has been sent
+# UVM_INFO tb/drv.svh(69) @ 25: uvm_test_top.env0.agt0.drv0 [drv] the 2th data=19c has been sent
+# UVM_INFO tb/mon.svh(56) @ 25: uvm_test_top.env0.agt0.mon0 [mon] has received 1th data=19c
+# UVM_INFO tb/drv.svh(69) @ 35: uvm_test_top.env0.agt0.drv0 [drv] the 3th data=41 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 35: uvm_test_top.env0.agt1.mon0 [o_mon] has received 1th data=59c
+# UVM_INFO tb/mon.svh(56) @ 35: uvm_test_top.env0.agt0.mon0 [mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 35: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @957 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 45: uvm_test_top.env0.agt0.drv0 [drv] the 4th data=15c has been sent
+# UVM_INFO tb/mon.svh(56) @ 45: uvm_test_top.env0.agt0.mon0 [mon] has received 3th data=15c
+# UVM_INFO tb/o_mon.svh(60) @ 45: uvm_test_top.env0.agt1.mon0 [o_mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 45: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @965 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 55: uvm_test_top.env0.agt0.drv0 [drv] the 5th data=15d has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 55: uvm_test_top.env0.agt1.mon0 [o_mon] has received 3th data=55c
+# UVM_INFO tb/mon.svh(56) @ 55: uvm_test_top.env0.agt0.mon0 [mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 55: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @973 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 65: uvm_test_top.env0.agt0.drv0 [drv] the 6th data=3ff has been sent
+# UVM_INFO tb/mon.svh(56) @ 65: uvm_test_top.env0.agt0.mon0 [mon] has received 5th data=3ff
+# UVM_INFO tb/o_mon.svh(60) @ 65: uvm_test_top.env0.agt1.mon0 [o_mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 65: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @981 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 75: uvm_test_top.env0.agt0.drv0 [drv] the 7th data=0 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 75: uvm_test_top.env0.agt1.mon0 [o_mon] has received 5th data=3ff
+# UVM_INFO tb/mon.svh(56) @ 75: uvm_test_top.env0.agt0.mon0 [mon] has received 6th data=0
+# UVM_INFO tb/sb.svh(54) @ 75: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @989 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/mon.svh(64) @ 85: uvm_test_top.env0.agt0.mon0 [mon] has received 7th data=0
+# UVM_INFO tb/o_mon.svh(60) @ 85: uvm_test_top.env0.agt1.mon0 [o_mon] has received 6th data=0
+# UVM_INFO tb/sb.svh(54) @ 85: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @993 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/o_mon.svh(68) @ 95: uvm_test_top.env0.agt1.mon0 [o_mon] has received 7th data=0
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   42
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [drv]     7
+# [mon]     7
+# [o_mon]     7
+# [sb]    18
+# ** Note: $finish    : D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 175 ns  Iteration: 105  Instance: /WRITER_TB
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do sim.do
+# End time: 16:40:40 on Jan 11,2018, Elapsed time: 0:01:35
+# Errors: 0, Warnings: 2
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:40:41 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:40:41 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:40:41 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:40:42 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:40:42 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(27): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(29): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(30): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:40:43 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:40:43 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# ** Warning: (vsim-8441) tb/coverage.svh(40): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# ** Warning: (vsim-8441) tb/coverage.svh(40): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# Loading D:/QuestaSim10_4e/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test case1...
+# UVM_INFO tb/drv.svh(69) @ 15: uvm_test_top.env0.agt0.drv0 [drv] the 1th data=218 has been sent
+# UVM_INFO tb/drv.svh(69) @ 25: uvm_test_top.env0.agt0.drv0 [drv] the 2th data=19c has been sent
+# UVM_INFO tb/mon.svh(56) @ 25: uvm_test_top.env0.agt0.mon0 [mon] has received 1th data=19c
+# UVM_INFO tb/drv.svh(69) @ 35: uvm_test_top.env0.agt0.drv0 [drv] the 3th data=41 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 35: uvm_test_top.env0.agt1.mon0 [o_mon] has received 1th data=59c
+# UVM_INFO tb/mon.svh(56) @ 35: uvm_test_top.env0.agt0.mon0 [mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 35: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @957 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 45: uvm_test_top.env0.agt0.drv0 [drv] the 4th data=15c has been sent
+# UVM_INFO tb/mon.svh(56) @ 45: uvm_test_top.env0.agt0.mon0 [mon] has received 3th data=15c
+# UVM_INFO tb/o_mon.svh(60) @ 45: uvm_test_top.env0.agt1.mon0 [o_mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 45: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @965 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 55: uvm_test_top.env0.agt0.drv0 [drv] the 5th data=15d has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 55: uvm_test_top.env0.agt1.mon0 [o_mon] has received 3th data=55c
+# UVM_INFO tb/mon.svh(56) @ 55: uvm_test_top.env0.agt0.mon0 [mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 55: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @973 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 65: uvm_test_top.env0.agt0.drv0 [drv] the 6th data=0 has been sent
+# UVM_INFO tb/mon.svh(56) @ 65: uvm_test_top.env0.agt0.mon0 [mon] has received 5th data=0
+# UVM_INFO tb/o_mon.svh(60) @ 65: uvm_test_top.env0.agt1.mon0 [o_mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 65: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @981 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 75: uvm_test_top.env0.agt0.drv0 [drv] the 7th data=3ff has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 75: uvm_test_top.env0.agt1.mon0 [o_mon] has received 5th data=0
+# UVM_INFO tb/mon.svh(56) @ 75: uvm_test_top.env0.agt0.mon0 [mon] has received 6th data=3ff
+# UVM_INFO tb/sb.svh(54) @ 75: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @989 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/mon.svh(64) @ 85: uvm_test_top.env0.agt0.mon0 [mon] has received 7th data=3ff
+# UVM_INFO tb/o_mon.svh(60) @ 85: uvm_test_top.env0.agt1.mon0 [o_mon] has received 6th data=3ff
+# UVM_INFO tb/sb.svh(54) @ 85: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @993 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/o_mon.svh(68) @ 95: uvm_test_top.env0.agt1.mon0 [o_mon] has received 7th data=3ff
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   42
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [drv]     7
+# [mon]     7
+# [o_mon]     7
+# [sb]    18
+# ** Note: $finish    : D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 175 ns  Iteration: 105  Instance: /WRITER_TB
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do sim.do
+# End time: 16:45:31 on Jan 11,2018, Elapsed time: 0:04:48
+# Errors: 0, Warnings: 2
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:45:31 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# ** Error (suppressible): src/writer.v(14): (vlog-2388) 'cnt' already declared in this scope (WRITER).
+# 
+# End time: 16:45:31 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: D:/QuestaSim10_4e/win64/vlog failed.
+# Error in macro ./sim.do line 16
+# D:/QuestaSim10_4e/win64/vlog failed.
+#     while executing
+# "vlog -f dut.f"
+do sim.do
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:46:22 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:46:22 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:46:22 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:46:23 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:46:23 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(27): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(29): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(30): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:46:24 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:46:25 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# ** Warning: (vsim-8441) tb/coverage.svh(40): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# ** Warning: (vsim-8441) tb/coverage.svh(40): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# Loading D:/QuestaSim10_4e/uvm-1.1d\win64\uvm_dpi.dll
+# ** Error: (vish-4014) No objects found matching '/WRITER_TB/WRITER/full'.
+# Error in macro ./wave.do line 9
+# (vish-4014) No objects found matching '/WRITER_TB/WRITER/full'.
+#     while executing
+# "add wave -noupdate -expand -group {output signal} /WRITER_TB/WRITER/full"
+do sim.do
+# End time: 16:47:25 on Jan 11,2018, Elapsed time: 0:01:00
+# Errors: 3, Warnings: 2
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:47:25 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:47:25 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:47:25 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:47:26 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:47:26 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(27): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(29): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(30): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:47:28 on Jan 11,2018, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:47:28 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# ** Warning: (vsim-8441) tb/coverage.svh(40): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# ** Warning: (vsim-8441) tb/coverage.svh(40): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# Loading D:/QuestaSim10_4e/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test case1...
+# UVM_INFO tb/drv.svh(69) @ 15: uvm_test_top.env0.agt0.drv0 [drv] the 1th data=218 has been sent
+# UVM_INFO tb/drv.svh(69) @ 25: uvm_test_top.env0.agt0.drv0 [drv] the 2th data=19c has been sent
+# UVM_INFO tb/mon.svh(56) @ 25: uvm_test_top.env0.agt0.mon0 [mon] has received 1th data=19c
+# UVM_INFO tb/drv.svh(69) @ 35: uvm_test_top.env0.agt0.drv0 [drv] the 3th data=41 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 35: uvm_test_top.env0.agt1.mon0 [o_mon] has received 1th data=59c
+# UVM_INFO tb/mon.svh(56) @ 35: uvm_test_top.env0.agt0.mon0 [mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 35: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @957 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 45: uvm_test_top.env0.agt0.drv0 [drv] the 4th data=15c has been sent
+# UVM_INFO tb/mon.svh(56) @ 45: uvm_test_top.env0.agt0.mon0 [mon] has received 3th data=15c
+# UVM_INFO tb/o_mon.svh(60) @ 45: uvm_test_top.env0.agt1.mon0 [o_mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 45: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @965 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 55: uvm_test_top.env0.agt0.drv0 [drv] the 5th data=15d has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 55: uvm_test_top.env0.agt1.mon0 [o_mon] has received 3th data=55c
+# UVM_INFO tb/mon.svh(56) @ 55: uvm_test_top.env0.agt0.mon0 [mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 55: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @973 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 65: uvm_test_top.env0.agt0.drv0 [drv] the 6th data=0 has been sent
+# UVM_INFO tb/mon.svh(56) @ 65: uvm_test_top.env0.agt0.mon0 [mon] has received 5th data=0
+# UVM_INFO tb/o_mon.svh(60) @ 65: uvm_test_top.env0.agt1.mon0 [o_mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 65: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @981 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 75: uvm_test_top.env0.agt0.drv0 [drv] the 7th data=3ff has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 75: uvm_test_top.env0.agt1.mon0 [o_mon] has received 5th data=0
+# UVM_INFO tb/mon.svh(56) @ 75: uvm_test_top.env0.agt0.mon0 [mon] has received 6th data=3ff
+# UVM_INFO tb/sb.svh(54) @ 75: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @989 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/mon.svh(64) @ 85: uvm_test_top.env0.agt0.mon0 [mon] has received 7th data=3ff
+# UVM_INFO tb/o_mon.svh(60) @ 85: uvm_test_top.env0.agt1.mon0 [o_mon] has received 6th data=3ff
+# UVM_INFO tb/sb.svh(54) @ 85: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @993 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/o_mon.svh(68) @ 95: uvm_test_top.env0.agt1.mon0 [o_mon] has received 7th data=3ff
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   42
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [drv]     7
+# [mon]     7
+# [o_mon]     7
+# [sb]    18
+# ** Note: $finish    : D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 175 ns  Iteration: 105  Instance: /WRITER_TB
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do sim.do
+# End time: 16:51:36 on Jan 11,2018, Elapsed time: 0:04:08
+# Errors: 0, Warnings: 2
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:51:36 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:51:36 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:51:36 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Error: ** while parsing file included at writer_pkg.svh(11)
+# ** at tb/coverage.svh(31): (vlog-2730) Undefined variable: 'max'.
+# 
+# ** Error: tb/trans.svh(5): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/trans.svh(11): (vlog-2730) Undefined variable: 'DWIDTH'.
+# 
+# ** Error: tb/drv.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/drv.svh(65): (vlog-2730) Undefined variable: 'DWIDTH'.
+# 
+# ** Error: tb/mon.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/sqr.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/agt.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/o_mon.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/o_agt.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/arb_if.sv(4): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# -- Compiling interface arb_if
+# ** Error: tb/arb_if.sv(11): (vlog-2730) Undefined variable: 'DWIDTH'.
+# 
+# ** Error: tb/arb_if.sv(12): (vlog-2730) Undefined variable: 'VWIDTH'.
+# 
+# ** Error: tb/sb.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/env.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/env.svh(13): Invalid type 'rm'. Please check the type of the variable 'rm0'.
+# ** Error: tb/env.svh(33): (vlog-2730) Undefined variable: 'rm0'.
+# 
+# ** Error: tb/env.svh(33): (vlog-2164) Class or package 'rm' not found.
+# 
+# ** Error: tb/env.svh(33): (vlog-2730) Undefined variable: 'rm'.
+# 
+# ** Error: (vlog-13069) tb/env.svh(33): near "::": syntax error, unexpected ::, expecting ';'.
+# 
+# ** Error: tb/rm.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/rm.svh(25): (vlog-2730) Undefined variable: 'DWIDTH'.
+# 
+# ** Error (suppressible): tb/rm.svh(25): (vlog-2388) 'data' already declared in this scope ((null)).
+# 
+# ** Error: tb/rm.svh(40): (vlog-2730) Undefined variable: 'DWIDTH'.
+# 
+# ** Error: tb/rm.svh(46): (vlog-2730) Undefined variable: 'DWIDTH'.
+# 
+# ** Error (suppressible): tb/rm.svh(46): (vlog-2388) 'data' already declared in this scope (calculate).
+# 
+# ** Error: tb/base_test.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: writer_tb.sv(4): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# End time: 16:51:38 on Jan 11,2018, Elapsed time: 0:00:02
+# Errors: 28, Warnings: 0
+# ** Error: D:/QuestaSim10_4e/win64/vlog failed.
+# Error in macro ./sim.do line 19
+# D:/QuestaSim10_4e/win64/vlog failed.
+#     while executing
+# "vlog -f tb.f"
+do sim.do
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:51:56 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:51:56 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:51:56 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:51:57 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:51:57 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(27): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(29): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(30): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:51:58 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:51:58 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# ** Fatal: (vsim-8274) tb/coverage.svh(54): Virtual interface elem. 'cnt' not found in 'arb_if'.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: case1.sv
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./sim.do PAUSED at line 31
+cd C:/Users/zhxiaoq9/Desktop/writer
+do sim.do
+# End time: 16:53:19 on Jan 11,2018, Elapsed time: 0:01:21
+# Errors: 1, Warnings: 0
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:53:19 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:53:19 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:53:19 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:53:20 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:53:21 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(27): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(29): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(30): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:53:22 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:53:22 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# ** Warning: (vsim-8441) tb/coverage.svh(53): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# ** Warning: (vsim-8441) tb/coverage.svh(53): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# Loading D:/QuestaSim10_4e/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test case1...
+# UVM_INFO tb/drv.svh(69) @ 15: uvm_test_top.env0.agt0.drv0 [drv] the 1th data=218 has been sent
+# UVM_INFO tb/drv.svh(69) @ 25: uvm_test_top.env0.agt0.drv0 [drv] the 2th data=19c has been sent
+# UVM_INFO tb/mon.svh(56) @ 25: uvm_test_top.env0.agt0.mon0 [mon] has received 1th data=19c
+# UVM_INFO tb/drv.svh(69) @ 35: uvm_test_top.env0.agt0.drv0 [drv] the 3th data=41 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 35: uvm_test_top.env0.agt1.mon0 [o_mon] has received 1th data=59c
+# UVM_INFO tb/mon.svh(56) @ 35: uvm_test_top.env0.agt0.mon0 [mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 35: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @957 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 45: uvm_test_top.env0.agt0.drv0 [drv] the 4th data=15c has been sent
+# UVM_INFO tb/mon.svh(56) @ 45: uvm_test_top.env0.agt0.mon0 [mon] has received 3th data=15c
+# UVM_INFO tb/o_mon.svh(60) @ 45: uvm_test_top.env0.agt1.mon0 [o_mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 45: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @965 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 55: uvm_test_top.env0.agt0.drv0 [drv] the 5th data=15d has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 55: uvm_test_top.env0.agt1.mon0 [o_mon] has received 3th data=55c
+# UVM_INFO tb/mon.svh(56) @ 55: uvm_test_top.env0.agt0.mon0 [mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 55: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @973 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 65: uvm_test_top.env0.agt0.drv0 [drv] the 6th data=0 has been sent
+# UVM_INFO tb/mon.svh(56) @ 65: uvm_test_top.env0.agt0.mon0 [mon] has received 5th data=0
+# UVM_INFO tb/o_mon.svh(60) @ 65: uvm_test_top.env0.agt1.mon0 [o_mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 65: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @981 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 75: uvm_test_top.env0.agt0.drv0 [drv] the 7th data=3ff has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 75: uvm_test_top.env0.agt1.mon0 [o_mon] has received 5th data=0
+# UVM_INFO tb/mon.svh(56) @ 75: uvm_test_top.env0.agt0.mon0 [mon] has received 6th data=3ff
+# UVM_INFO tb/sb.svh(54) @ 75: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @989 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/mon.svh(64) @ 85: uvm_test_top.env0.agt0.mon0 [mon] has received 7th data=3ff
+# UVM_INFO tb/o_mon.svh(60) @ 85: uvm_test_top.env0.agt1.mon0 [o_mon] has received 6th data=3ff
+# UVM_INFO tb/sb.svh(54) @ 85: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @993 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/o_mon.svh(68) @ 95: uvm_test_top.env0.agt1.mon0 [o_mon] has received 7th data=3ff
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   42
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [drv]     7
+# [mon]     7
+# [o_mon]     7
+# [sb]    18
+# ** Note: $finish    : D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 175 ns  Iteration: 105  Instance: /WRITER_TB
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do sim.do
+# End time: 16:54:10 on Jan 11,2018, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 2
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:54:11 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:54:11 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:54:11 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:54:12 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:54:12 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(27): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(29): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(30): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:54:13 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case1" 
+# Start time: 16:54:13 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# ** Warning: (vsim-8441) tb/coverage.svh(53): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# ** Warning: (vsim-8441) tb/coverage.svh(53): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# Loading D:/QuestaSim10_4e/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test case1...
+# UVM_INFO tb/drv.svh(69) @ 15: uvm_test_top.env0.agt0.drv0 [drv] the 1th data=218 has been sent
+# UVM_INFO tb/drv.svh(69) @ 25: uvm_test_top.env0.agt0.drv0 [drv] the 2th data=19c has been sent
+# UVM_INFO tb/mon.svh(56) @ 25: uvm_test_top.env0.agt0.mon0 [mon] has received 1th data=19c
+# UVM_INFO tb/drv.svh(69) @ 35: uvm_test_top.env0.agt0.drv0 [drv] the 3th data=41 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 35: uvm_test_top.env0.agt1.mon0 [o_mon] has received 1th data=59c
+# UVM_INFO tb/mon.svh(56) @ 35: uvm_test_top.env0.agt0.mon0 [mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 35: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @957 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h59c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 45: uvm_test_top.env0.agt0.drv0 [drv] the 4th data=15c has been sent
+# UVM_INFO tb/mon.svh(56) @ 45: uvm_test_top.env0.agt0.mon0 [mon] has received 3th data=15c
+# UVM_INFO tb/o_mon.svh(60) @ 45: uvm_test_top.env0.agt1.mon0 [o_mon] has received 2th data=41
+# UVM_INFO tb/sb.svh(54) @ 45: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @965 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h41 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 55: uvm_test_top.env0.agt0.drv0 [drv] the 5th data=15d has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 55: uvm_test_top.env0.agt1.mon0 [o_mon] has received 3th data=55c
+# UVM_INFO tb/mon.svh(56) @ 55: uvm_test_top.env0.agt0.mon0 [mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 55: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @973 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h55c
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 65: uvm_test_top.env0.agt0.drv0 [drv] the 6th data=26a has been sent
+# UVM_INFO tb/mon.svh(56) @ 65: uvm_test_top.env0.agt0.mon0 [mon] has received 5th data=26a
+# UVM_INFO tb/o_mon.svh(60) @ 65: uvm_test_top.env0.agt1.mon0 [o_mon] has received 4th data=15d
+# UVM_INFO tb/sb.svh(54) @ 65: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @981 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h15d
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 75: uvm_test_top.env0.agt0.drv0 [drv] the 7th data=89 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 75: uvm_test_top.env0.agt1.mon0 [o_mon] has received 5th data=66a
+# UVM_INFO tb/mon.svh(56) @ 75: uvm_test_top.env0.agt0.mon0 [mon] has received 6th data=89
+# UVM_INFO tb/sb.svh(54) @ 75: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @989 
+#   data  integral  11    'h66a
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h66a
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 85: uvm_test_top.env0.agt0.drv0 [drv] the 8th data=ac has been sent
+# UVM_INFO tb/mon.svh(56) @ 85: uvm_test_top.env0.agt0.mon0 [mon] has received 7th data=ac
+# UVM_INFO tb/o_mon.svh(60) @ 85: uvm_test_top.env0.agt1.mon0 [o_mon] has received 6th data=489
+# UVM_INFO tb/sb.svh(54) @ 85: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @997 
+#   data  integral  11    'h489
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h489
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 95: uvm_test_top.env0.agt0.drv0 [drv] the 9th data=a1 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 95: uvm_test_top.env0.agt1.mon0 [o_mon] has received 7th data=ac
+# UVM_INFO tb/mon.svh(56) @ 95: uvm_test_top.env0.agt0.mon0 [mon] has received 8th data=a1
+# UVM_INFO tb/sb.svh(54) @ 95: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 95: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1005
+#   data  integral  11    'hac 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 95: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'hac 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 105: uvm_test_top.env0.agt0.drv0 [drv] the 10th data=185 has been sent
+# UVM_INFO tb/mon.svh(56) @ 105: uvm_test_top.env0.agt0.mon0 [mon] has received 9th data=185
+# UVM_INFO tb/o_mon.svh(60) @ 105: uvm_test_top.env0.agt1.mon0 [o_mon] has received 8th data=4a1
+# UVM_INFO tb/sb.svh(54) @ 105: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 105: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1013
+#   data  integral  11    'h4a1
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 105: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h4a1
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 115: uvm_test_top.env0.agt0.drv0 [drv] the 11th data=12e has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 115: uvm_test_top.env0.agt1.mon0 [o_mon] has received 9th data=185
+# UVM_INFO tb/mon.svh(56) @ 115: uvm_test_top.env0.agt0.mon0 [mon] has received 10th data=12e
+# UVM_INFO tb/sb.svh(54) @ 115: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 115: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1021
+#   data  integral  11    'h185
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 115: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h185
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 125: uvm_test_top.env0.agt0.drv0 [drv] the 12th data=be has been sent
+# UVM_INFO tb/mon.svh(56) @ 125: uvm_test_top.env0.agt0.mon0 [mon] has received 11th data=be
+# UVM_INFO tb/o_mon.svh(60) @ 125: uvm_test_top.env0.agt1.mon0 [o_mon] has received 10th data=52e
+# UVM_INFO tb/sb.svh(54) @ 125: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 125: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1029
+#   data  integral  11    'h52e
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 125: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h52e
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 135: uvm_test_top.env0.agt0.drv0 [drv] the 13th data=fe has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 135: uvm_test_top.env0.agt1.mon0 [o_mon] has received 11th data=be
+# UVM_INFO tb/mon.svh(56) @ 135: uvm_test_top.env0.agt0.mon0 [mon] has received 12th data=fe
+# UVM_INFO tb/sb.svh(54) @ 135: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 135: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1037
+#   data  integral  11    'hbe 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 135: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'hbe 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 145: uvm_test_top.env0.agt0.drv0 [drv] the 14th data=282 has been sent
+# UVM_INFO tb/mon.svh(56) @ 145: uvm_test_top.env0.agt0.mon0 [mon] has received 13th data=282
+# UVM_INFO tb/o_mon.svh(60) @ 145: uvm_test_top.env0.agt1.mon0 [o_mon] has received 12th data=4fe
+# UVM_INFO tb/sb.svh(54) @ 145: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 145: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1045
+#   data  integral  11    'h4fe
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 145: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h4fe
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 155: uvm_test_top.env0.agt0.drv0 [drv] the 15th data=63 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 155: uvm_test_top.env0.agt1.mon0 [o_mon] has received 13th data=682
+# UVM_INFO tb/mon.svh(56) @ 155: uvm_test_top.env0.agt0.mon0 [mon] has received 14th data=63
+# UVM_INFO tb/sb.svh(54) @ 155: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 155: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1053
+#   data  integral  11    'h682
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 155: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h682
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 165: uvm_test_top.env0.agt0.drv0 [drv] the 16th data=255 has been sent
+# UVM_INFO tb/mon.svh(56) @ 165: uvm_test_top.env0.agt0.mon0 [mon] has received 15th data=255
+# UVM_INFO tb/o_mon.svh(60) @ 165: uvm_test_top.env0.agt1.mon0 [o_mon] has received 14th data=63
+# UVM_INFO tb/sb.svh(54) @ 165: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 165: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1061
+#   data  integral  11    'h63 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 165: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h63 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 175: uvm_test_top.env0.agt0.drv0 [drv] the 17th data=33d has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 175: uvm_test_top.env0.agt1.mon0 [o_mon] has received 15th data=655
+# UVM_INFO tb/mon.svh(56) @ 175: uvm_test_top.env0.agt0.mon0 [mon] has received 16th data=33d
+# UVM_INFO tb/sb.svh(54) @ 175: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 175: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1069
+#   data  integral  11    'h655
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 175: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h655
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 185: uvm_test_top.env0.agt0.drv0 [drv] the 18th data=368 has been sent
+# UVM_INFO tb/mon.svh(56) @ 185: uvm_test_top.env0.agt0.mon0 [mon] has received 17th data=368
+# UVM_INFO tb/o_mon.svh(60) @ 185: uvm_test_top.env0.agt1.mon0 [o_mon] has received 16th data=73d
+# UVM_INFO tb/sb.svh(54) @ 185: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 185: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1077
+#   data  integral  11    'h73d
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 185: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h73d
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 195: uvm_test_top.env0.agt0.drv0 [drv] the 19th data=229 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 195: uvm_test_top.env0.agt1.mon0 [o_mon] has received 17th data=768
+# UVM_INFO tb/mon.svh(56) @ 195: uvm_test_top.env0.agt0.mon0 [mon] has received 18th data=229
+# UVM_INFO tb/sb.svh(54) @ 195: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 195: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1085
+#   data  integral  11    'h768
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 195: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h768
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 205: uvm_test_top.env0.agt0.drv0 [drv] the 20th data=218 has been sent
+# UVM_INFO tb/mon.svh(56) @ 205: uvm_test_top.env0.agt0.mon0 [mon] has received 19th data=218
+# UVM_INFO tb/o_mon.svh(60) @ 205: uvm_test_top.env0.agt1.mon0 [o_mon] has received 18th data=229
+# UVM_INFO tb/sb.svh(54) @ 205: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 205: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1093
+#   data  integral  11    'h229
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 205: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h229
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 215: uvm_test_top.env0.agt0.drv0 [drv] the 21th data=0 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 215: uvm_test_top.env0.agt1.mon0 [o_mon] has received 19th data=618
+# UVM_INFO tb/mon.svh(56) @ 215: uvm_test_top.env0.agt0.mon0 [mon] has received 20th data=0
+# UVM_INFO tb/sb.svh(54) @ 215: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 215: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1101
+#   data  integral  11    'h618
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 215: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h618
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 225: uvm_test_top.env0.agt0.drv0 [drv] the 22th data=3ff has been sent
+# UVM_INFO tb/mon.svh(56) @ 225: uvm_test_top.env0.agt0.mon0 [mon] has received 21th data=3ff
+# UVM_INFO tb/o_mon.svh(60) @ 225: uvm_test_top.env0.agt1.mon0 [o_mon] has received 20th data=0
+# UVM_INFO tb/sb.svh(54) @ 225: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 225: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1109
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 225: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h0  
+# -----------------------------
+# UVM_INFO tb/o_mon.svh(60) @ 235: uvm_test_top.env0.agt1.mon0 [o_mon] has received 21th data=3ff
+# UVM_INFO tb/mon.svh(64) @ 235: uvm_test_top.env0.agt0.mon0 [mon] has received 22th data=3ff
+# UVM_INFO tb/sb.svh(54) @ 235: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 235: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1113
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 235: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h3ff
+# -----------------------------
+# UVM_INFO tb/o_mon.svh(68) @ 245: uvm_test_top.env0.agt1.mon0 [o_mon] has received 22th data=3ff
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  132
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [drv]    22
+# [mon]    22
+# [o_mon]    22
+# [sb]    63
+# ** Note: $finish    : D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 325 ns  Iteration: 105  Instance: /WRITER_TB
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do sim.do
+# End time: 16:56:00 on Jan 11,2018, Elapsed time: 0:01:47
+# Errors: 0, Warnings: 2
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:56:00 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:56:00 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:56:00 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Error: tb/coverage.svh(45): (vlog-60) Construction of embedded covergroup (defined in a class) is not supported except in constructor 'new()' of covergroup's parent class
+# 
+# ** Error: tb/coverage.svh(45): No actual value has been specified for a formal argument '#parent_arg#' that does not have a default value.
+# ** Error: tb/coverage.svh(45): Number of actuals and formals does not match in function call.
+# ** Error: tb/coverage.svh(46): (vlog-60) Construction of embedded covergroup (defined in a class) is not supported except in constructor 'new()' of covergroup's parent class
+# 
+# ** Error: tb/coverage.svh(46): No actual value has been specified for a formal argument '#parent_arg#' that does not have a default value.
+# ** Error: tb/coverage.svh(46): Number of actuals and formals does not match in function call.
+# ** Error: tb/trans.svh(5): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/trans.svh(11): (vlog-2730) Undefined variable: 'DWIDTH'.
+# 
+# ** Error: tb/drv.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/drv.svh(65): (vlog-2730) Undefined variable: 'DWIDTH'.
+# 
+# ** Error: tb/mon.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/sqr.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/agt.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/o_mon.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/o_agt.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/arb_if.sv(4): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# -- Compiling interface arb_if
+# ** Error: tb/arb_if.sv(11): (vlog-2730) Undefined variable: 'DWIDTH'.
+# 
+# ** Error: tb/arb_if.sv(12): (vlog-2730) Undefined variable: 'VWIDTH'.
+# 
+# ** Error: tb/sb.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/env.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/env.svh(13): Invalid type 'rm'. Please check the type of the variable 'rm0'.
+# ** Error: tb/env.svh(33): (vlog-2730) Undefined variable: 'rm0'.
+# 
+# ** Error: tb/env.svh(33): (vlog-2164) Class or package 'rm' not found.
+# 
+# ** Error: tb/env.svh(33): (vlog-2730) Undefined variable: 'rm'.
+# 
+# ** Error: (vlog-13069) tb/env.svh(33): near "::": syntax error, unexpected ::, expecting ';'.
+# 
+# ** Error: tb/rm.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: tb/rm.svh(25): (vlog-2730) Undefined variable: 'DWIDTH'.
+# 
+# ** Error (suppressible): tb/rm.svh(25): (vlog-2388) 'data' already declared in this scope ((null)).
+# 
+# ** Error: tb/rm.svh(40): (vlog-2730) Undefined variable: 'DWIDTH'.
+# 
+# ** Error: tb/rm.svh(46): (vlog-2730) Undefined variable: 'DWIDTH'.
+# 
+# ** Error (suppressible): tb/rm.svh(46): (vlog-2388) 'data' already declared in this scope (calculate).
+# 
+# ** Error: tb/base_test.svh(6): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# ** Error: writer_tb.sv(4): (vlog-13006) Could not find the package (writer_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# 
+# End time: 16:56:02 on Jan 11,2018, Elapsed time: 0:00:02
+# Errors: 33, Warnings: 0
+# ** Error: D:/QuestaSim10_4e/win64/vlog failed.
+# Error in macro ./sim.do line 19
+# D:/QuestaSim10_4e/win64/vlog failed.
+#     while executing
+# "vlog -f tb.f"
+do sim.do
+# D:/QuestaSim10_4e/uvm-1.1d/win64
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:58:16 on Jan 11,2018
+# vlog -reportprogress 300 -f dut.f 
+# -- Compiling module WRITER
+# 
+# Top level modules:
+# 	WRITER
+# End time: 16:58:16 on Jan 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:58:16 on Jan 11,2018
+# vlog -reportprogress 300 -f tb.f 
+# -- Compiling package writer_pkg
+# ** Note: (vlog-2286) Using implicit +incdir+D:/QuestaSim10_4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package arb_if_sv_unit
+# -- Importing package writer_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface arb_if
+# -- Compiling package writer_tb_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package writer_pkg
+# -- Compiling module WRITER_TB
+# 
+# Top level modules:
+# 	WRITER_TB
+# End time: 16:58:17 on Jan 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 16:58:17 on Jan 11,2018
+# vopt -reportprogress 300 WRITER_TB "+acc" "+cover=bcesf" -o top_optimized 
+# 
+# Top level modules:
+# 	WRITER_TB
+# 
+# Analyzing design...
+# -- Loading module WRITER_TB
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface arb_if
+# -- Loading module WRITER
+# Optimizing 9 design-units (inlining 0/2 module instances, 0/0 UDP instances):
+# -- Optimizing interface arb_if(fast__1)
+# -- Optimizing module WRITER_TB(fast)
+# -- Optimizing module WRITER(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package writer_tb_sv_unit(fast)
+# -- Optimizing interface arb_if(fast)
+# -- Optimizing package arb_if_sv_unit(fast)
+# -- Optimizing package writer_pkg(fast)
+# ** Warning: case1.sv(27): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(29): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case1.sv(30): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# ** Warning: case0.sv(24): (vopt-2708) Condition Coverage ignoring this statement: 
+# 
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# Optimized design name is top_optimized
+# End time: 16:58:19 on Jan 11,2018, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+# vsim top_optimized -coverage -l sim.log -L D:/QuestaSim10_4e/uvm-1.1d/win64/uvm_dpi "+UVM_TESTNAME=case0" 
+# Start time: 16:58:19 on Jan 11,2018
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.writer_pkg(fast)
+# Loading work.writer_tb_sv_unit(fast)
+# Loading work.WRITER_TB(fast)
+# Loading work.arb_if_sv_unit(fast)
+# Loading work.arb_if(fast__1)
+# Loading work.WRITER(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.arb_if(fast)
+# ** Warning: (vsim-8441) tb/coverage.svh(52): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# ** Warning: (vsim-8441) tb/coverage.svh(52): Clocking block output vif.dcb.in is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /writer_pkg File: writer_pkg.svh
+# Loading D:/QuestaSim10_4e/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test case0...
+# UVM_INFO tb/drv.svh(69) @ 5: uvm_test_top.env0.agt0.drv0 [drv] the 1th data=d4 has been sent
+# UVM_INFO tb/drv.svh(69) @ 15: uvm_test_top.env0.agt0.drv0 [drv] the 2th data=2d1 has been sent
+# UVM_INFO tb/mon.svh(56) @ 15: uvm_test_top.env0.agt0.mon0 [mon] has received 1th data=2d1
+# UVM_INFO tb/drv.svh(69) @ 25: uvm_test_top.env0.agt0.drv0 [drv] the 3th data=6e has been sent
+# UVM_INFO tb/mon.svh(56) @ 25: uvm_test_top.env0.agt0.mon0 [mon] has received 2th data=6e
+# UVM_INFO tb/o_mon.svh(60) @ 25: uvm_test_top.env0.agt1.mon0 [o_mon] has received 1th data=6d1
+# UVM_INFO tb/sb.svh(54) @ 25: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 25: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @957 
+#   data  integral  11    'h6d1
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 25: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h6d1
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 35: uvm_test_top.env0.agt0.drv0 [drv] the 4th data=88 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 35: uvm_test_top.env0.agt1.mon0 [o_mon] has received 2th data=46e
+# UVM_INFO tb/mon.svh(56) @ 35: uvm_test_top.env0.agt0.mon0 [mon] has received 3th data=88
+# UVM_INFO tb/sb.svh(54) @ 35: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @965 
+#   data  integral  11    'h46e
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 35: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h46e
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 45: uvm_test_top.env0.agt0.drv0 [drv] the 5th data=2f9 has been sent
+# UVM_INFO tb/mon.svh(56) @ 45: uvm_test_top.env0.agt0.mon0 [mon] has received 4th data=2f9
+# UVM_INFO tb/o_mon.svh(60) @ 45: uvm_test_top.env0.agt1.mon0 [o_mon] has received 3th data=88
+# UVM_INFO tb/sb.svh(54) @ 45: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @973 
+#   data  integral  11    'h88 
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 45: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h88 
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 55: uvm_test_top.env0.agt0.drv0 [drv] the 6th data=135 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 55: uvm_test_top.env0.agt1.mon0 [o_mon] has received 4th data=6f9
+# UVM_INFO tb/mon.svh(56) @ 55: uvm_test_top.env0.agt0.mon0 [mon] has received 5th data=135
+# UVM_INFO tb/sb.svh(54) @ 55: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @981 
+#   data  integral  11    'h6f9
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 55: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h6f9
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 65: uvm_test_top.env0.agt0.drv0 [drv] the 7th data=1d4 has been sent
+# UVM_INFO tb/mon.svh(56) @ 65: uvm_test_top.env0.agt0.mon0 [mon] has received 6th data=1d4
+# UVM_INFO tb/o_mon.svh(60) @ 65: uvm_test_top.env0.agt1.mon0 [o_mon] has received 5th data=535
+# UVM_INFO tb/sb.svh(54) @ 65: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @989 
+#   data  integral  11    'h535
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 65: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h535
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 75: uvm_test_top.env0.agt0.drv0 [drv] the 8th data=1a1 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 75: uvm_test_top.env0.agt1.mon0 [o_mon] has received 6th data=5d4
+# UVM_INFO tb/mon.svh(56) @ 75: uvm_test_top.env0.agt0.mon0 [mon] has received 7th data=1a1
+# UVM_INFO tb/sb.svh(54) @ 75: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @997 
+#   data  integral  11    'h5d4
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 75: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h5d4
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 85: uvm_test_top.env0.agt0.drv0 [drv] the 9th data=1c5 has been sent
+# UVM_INFO tb/mon.svh(56) @ 85: uvm_test_top.env0.agt0.mon0 [mon] has received 8th data=1c5
+# UVM_INFO tb/o_mon.svh(60) @ 85: uvm_test_top.env0.agt1.mon0 [o_mon] has received 7th data=1a1
+# UVM_INFO tb/sb.svh(54) @ 85: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1005
+#   data  integral  11    'h1a1
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 85: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h1a1
+# -----------------------------
+# UVM_INFO tb/drv.svh(69) @ 95: uvm_test_top.env0.agt0.drv0 [drv] the 10th data=260 has been sent
+# UVM_INFO tb/o_mon.svh(60) @ 95: uvm_test_top.env0.agt1.mon0 [o_mon] has received 8th data=5c5
+# UVM_INFO tb/mon.svh(56) @ 95: uvm_test_top.env0.agt0.mon0 [mon] has received 9th data=260
+# UVM_INFO tb/sb.svh(54) @ 95: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 95: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1013
+#   data  integral  11    'h5c5
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 95: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h5c5
+# -----------------------------
+# UVM_INFO tb/mon.svh(64) @ 105: uvm_test_top.env0.agt0.mon0 [mon] has received 10th data=260
+# UVM_INFO tb/o_mon.svh(60) @ 105: uvm_test_top.env0.agt1.mon0 [o_mon] has received 9th data=660
+# UVM_INFO tb/sb.svh(54) @ 105: uvm_test_top.env0.sb0 [sb] result compare successful
+# UVM_INFO tb/sb.svh(55) @ 105: uvm_test_top.env0.sb0 [sb] the transaction from rm
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# new_tr  trans     -     @1017
+#   data  integral  11    'h660
+# -----------------------------
+# UVM_INFO tb/sb.svh(57) @ 105: uvm_test_top.env0.sb0 [sb] the transaction from dut
+# -----------------------------
+# Name    Type      Size  Value
+# -----------------------------
+# tr      trans     -     @929 
+#   data  integral  11    'h660
+# -----------------------------
+# UVM_INFO tb/o_mon.svh(68) @ 115: uvm_test_top.env0.agt1.mon0 [o_mon] has received 10th data=660
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   60
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [drv]    10
+# [mon]    10
+# [o_mon]    10
+# [sb]    27
+# ** Note: $finish    : D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 195 ns  Iteration: 105  Instance: /WRITER_TB
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at D:/QuestaSim10_4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
