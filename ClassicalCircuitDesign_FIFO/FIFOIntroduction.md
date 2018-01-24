@@ -89,10 +89,10 @@ FIFO中不能直接对二进制地址直接进行同步的方法是使用格雷�
 如果要用格雷码比较产生空满信号，则必须使用第2种格雷码。  
 
 第1种格雷码实现结构如下图所示：  
-![第1种](https://raw.githubusercontent.com/zhxiaoq9/WeChat/master/ClassicalCircuitDesign_FIFO/images/GrayCodeCounter2.PNG "图片来自参考文献1")
+![第1种](https://raw.githubusercontent.com/zhxiaoq9/WeChat/master/ClassicalCircuitDesign_FIFO/images/GrayCodeCounter1.PNG "图片来自参考文献1")
 
 第2种格雷码实现结构如下图所示：  
-![第2种](https://raw.githubusercontent.com/zhxiaoq9/WeChat/master/ClassicalCircuitDesign_FIFO/images/GrayCodeCounter1.PNG "图片来自参考文献1")
+![第2种](https://raw.githubusercontent.com/zhxiaoq9/WeChat/master/ClassicalCircuitDesign_FIFO/images/GrayCodeCounter2.PNG "图片来自参考文献1")
 
 
 上面说使用格雷码可以避免二进制码出现的问题，但是问题是使用格雷码仍可能出现1比特的同步错误，**如果这个错误发生了会对FIFO造成影响吗？** ***答案是不会。***  
