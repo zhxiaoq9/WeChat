@@ -97,7 +97,7 @@ end
 
 //100M write clock
 always #5 wclk = ~wclk;
-//300M read clock
+//250M read clock
 always #2 rclk = ~rclk;
 
 task init();
